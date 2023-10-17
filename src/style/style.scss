@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+// **********header*********8
+header{
+    width: 100%;
+    height: 60px;
+    top: -100px;
+    left: 0;
+    z-index: 10;
+    transition: all .2s ease;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+
+    .logo_box{
+        width: 23%;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 90px;
+    }
+    .header_items_cont{
+        width: 20%;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        padding-right: 40px;
+        cursor: default;
+
+        .items{
+            width: 33%;
+            height: 100%;
+            // border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5px;
+
+            & > img{
+                width: 30px;
+                height: 30px;
+            }
+            & > p{
+                font-size: 13px;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}
+.quantityBox{
+    height: 12px;
+    width: 12px;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 127px;
+    top: 3px;
+    & > span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    }
+}
+.fixed{
+    position: fixed;
+    transform: translateY(100px);
+}
+
+// ********HomePage********
+.container{
+    width: 100%;
+    // height: 1200px;
+    // border: 1px solid blue;
+    display: flex;
+    padding-bottom: 80px;
+
+}
+.MainCont{
+    width: 77%;
+    // height: 100%;
+    // border: 1px solid brown;
+}
+
+
+// **********Slider**********
+
+.SliderCont{
+    width: 100%;
+    height: 300px;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Slider{
+    width: 800px;
+    height: 230px;
+    // border: 1px solid black;
+    overflow: hidden;
+    
+}
+.LeftBtn{
+    width: 33px;
+    height: 65px;
+    // border: 1px solid black;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #FF4800;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 35px;
+    border: none;
+}
+.RightBtn{
+    width: 33px;
+    height: 65px;
+    // border: 1px solid black;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #FF4800;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: 35px;
+    top: 120px;
+    border: none;
+}
+.SliderLine{
+    width: 2395px;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    position: relative;
+    transition: 0.4s;
+}
+.SliderImg{
+    width: 34%;
+    height: 100%;
+    // border: 1px solid red;
+}
+.images{
+    width: 102%;
+    height: 101%;
+}
+.ProductCont{
+    width: 100%;
+    // height: 75%;
+    // border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-around;
+    padding-top: 75px;
+}
+.ProductsSorting{
+    width: 25%;
+    height: 45px;
+    // border: 1px solid black;
+    display: flex;
+    position: absolute;
+    top: 361px;
+    left: 313px;
+    cursor: default;
+    
+}
+.TopProductsBox{
+    width: 105px;
+    height: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    // text-decoration-line: underline;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+.PickedForYouBox{
+    width: 110px;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    margin-left: 25px;
+    color: #A0A0AB;
+}
+
+// ******products*******
+.ProductBoxes{
+    width: 190px;
+    height: 370px;
+    // border: 1px solid black;
+    // margin-top: 40px;
+    border-radius: 10px;
+}
+.ProductImgBox{
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+    // border: 1px solid black;
+    overflow: hidden;
+    & > img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.ProductInfoBox{
+    width: 100%;
+    height: 84px;
+    overflow: hidden;
+    // transition: 0.2s;
+    transition: all .1s ease;
+    // border: 1px solid black;
+    cursor: default;
+    
+}
+.activeButtons{
+    height: 125px;
+}
+.bestsellerBox{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    position: absolute
+}
+.PriceBox{
+    width: auto;
+    height: 25px;
+    // border: 1px solid black;
+    display: flex;
+    padding-top: 7px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+.Price{
+    // width: 45%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+.Discount{
+    // width: 55%;
+    // padding-left: 20px;
+    height: 100%;
+    margin-left: 4px;
+    // border: 1px solid black;  
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #A0A0B3;
+    // padding-right: 35px;
+    padding-left: 4px;
+}
+.TitleBox{
+    width: 100%;
+    height: 25px;
+    // border: 1px solid black;
+    padding-top: 4px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    // font-family: 'Open Sas', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+
+}
+.ratingBox{
+    width: 100%;
+    height: 25px;
+    padding-top: 8px;
+    // border: 1px solid black;
+    display: flex;
+}
+.rating{
+    width: 20%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    & > img{
+        width: 16px;
+        height: 16px;
+    }
+}
+.boughtBox{
+    width: 45%;
+    height: 100%;
+    // border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12.3px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 5px;
+}
+.buttonsBox{
+    width: 100%;
+    height: 45px;
+    // border: 1px solid black;
+    display: flex;
+}
+.cartBtnBox{
+    width: 60%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    & > button{
+        width: 90px;
+    height: 30px;
+    background-color: #F14924;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    }
+}
+.addToCartBtn:hover{
+    background-color: #FF7252;
+    transition: 0.2s;
+}
+.likeBox{
+    width: 40%;
+    height: 100%;
+    // border: 1px solid red;
+}
+
+.likeBox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    & > p{
+        font-size: 21px;
+        :hover{
+            color: red;
+        }
+    }
+}
+
+// **********ShowMore************
+.ShowMoreBtnBox{
+    width: 100%;
+    height: 40px;
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ShowMoreBtn{
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #FF4800;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.ShowMoreBtn:hover{
+    background-color: #FF7252;
+    transition: 0.2s;
+    
+}
+.hidden{
+    display: none !important;
+}
+
+// *********Footer*********
+.footer{
+    width: 100%;
+    height: 550px;
+    background-color: #E4E4E4;
+    cursor: default;
+}
+.footerCont1{
+    width: 100%;
+    height: 24%;
+    // border: 1px solid black;
+    display: flex;
+}
+.footerCont1_box{
+    width: 25%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+}
+.footerCont1_box_iconBox{
+    width: 20%;
+    height: 100%;
+    // border: 1px solid black;
+    font-size: 18px;
+    padding-top: 38px;
+    padding-left: 34px;
+}
+.footerCont1_box_textBox{
+    width: 80%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+    & > span{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+    & > p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+}
+.footerCont2{
+    width: 100%;
+    height: 12%;
+    // border: 1px solid black;
+}
+.footerCont2_img_Boxes_cont{
+    width: 35%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    margin-left: 20px;
+}
+.footerImg{
+    width: 34%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > img{
+        height: 45px;
+        width: 135px;
+    }
+}
+.FooterCont3{
+    width: 100%;
+    height: 45%;
+    // border: 1px solid black;
+    display: flex;
+    margin-top: 15px;
+}
+.FooterCont3_box{
+    width: 25%;
+    height: 100%;
+    // border: 1px solid black;
+}
+.FooterCont3_box_title{
+    width: 100%;
+    height: 20%;
+    // border: 1px solid black;
+    padding-left: 38px;
+    padding-top: 5px;
+    & > p{
+        font-size: 23px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+}
+.FooterCont3_box_Tex{
+    width: 100%;
+    height: 80%;
+    // border: 1px solid black;
+    & > ul{
+        list-style: none;
+        text-decoration: underline;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 18px;
+    }
+}
+.FooterCont4{
+    width: 100%;
+    height: 10%;
+    // border: 1px solid black;
+    display: flex;
+}
+.FooterCont4Box1{
+    width: 50%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+}
+.FooterCont4Box2{
+    width: 50%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+.FooterCont4Box1_textBox{
+    width: 26%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    margin-left: 5px;
+    & > p{
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: underline;
+    }
+}
+.FooterCont4Box2_textBox{
+    width: 50%;
+    height: 100%;
+    // border: 1px solid black;
+    padding-left: 90px;
+    & > p{
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: -1px;
+    }
+}
+
+
+// *******LeftCont Categories**********
+
+.leftCont{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.categoryBoxes{
+    width: 100%;
+    height: 40px;
+    // border: 1px solid black;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    cursor: default;
+}
+.categoryBoxes:hover{
+    background-color: #E3E3E3;
+}
+.LeftContOtherContantBox{
+    width: 100%;
+    height: 90px;
+    // border: 1px solid black;
+    margin-top: 30px;
+}
+.sellBox{
+    width: 100%;
+    height: 50%;
+    // border: 1px solid black;
+    padding-top: 15px;
+    padding-left: 1px;
+    & > p{
+    font-family: 'Open Sans', sans-serif;
+    color: #FF6C02;
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 5px;
+    cursor: default;
+    }
+}
+.categoriesBtn{
+    width: 100%;
+    height: 50%;
+    // border: 1px solid black;
+    padding-top: 10px;
+    padding-left: 5px;
+    & > p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: default;
+    }
+}
+// **********Cart********
+.CartList{
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    z-index: 10;
+    right: 0px;
+}
+.cartListActive{
+    width: 400px;
+    transition: 0.2s linear;
+}
+.closeCont{
+    width: 100%;
+    height: 40px;
+    // border: 1px solid black;
+    margin-top: 5px;
+}
+.CloseIconBox{
+    width: 15%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CloseBtn{
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.CartProductsCont{
+    width: 100%;
+    height: 550px;
+    // border: 1px solid black;
+    overflow: auto;
+}
+.CartButtonBtnsCont{
+    width: 100%;
+    height: 50px;
+    // border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    margin-top: 20px;
+}
+.TotalPriceBox{
+    width: 50%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 55px;
+    & > p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    }
+    & > span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    }
+}
+.BuyBtnBox{
+    width: 50%;
+    height: 100%;
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BuyBtn{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: #FF6C02;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.cartProductBox{
+    width: 90%;
+    height: 50px;
+    border: 1px solid black;
+}
